@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" type="image/svg+xml" href="/img/logo.png">
+    <title>Ubezpieczenie 24</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="big__container">
+            <div class="nav__menu">
+                <a href="index.html"><img class="logo" src="/img/logo.png" alt=""></a>
+
+                <ul class="nav__list">
+                    <li class="nav__item"><a data-lang-pl="Karta pobytu" data-lang-ru="Карта побыта" href="#"
+                            class="nav__link">Карта побыта</a>
+                    </li>
+                    <li class="nav__item"><a data-lang-pl="Obywatelstwo" data-lang-ru="Гражданство" href="#"
+                            class="nav__link">Гражданство</a></li>
+
+                    <li class="nav__item"><a data-lang-pl="Usługi samochodowe" data-lang-ru="Автоуслуги" href="#"
+                            class="nav__link dropdown">Автоуслуги</a></li>
+                    <li class="nav__item"><a data-lang-pl="Inne usługi" data-lang-ru="Другие услуги" href="#"
+                            class="nav__link dropdown">Другие
+                            услуги</a></li>
+                    <li class="nav__item"><a data-lang-pl="Blog" data-lang-ru="Блог" href="#" class="nav__link">Блог</a>
+                    </li>
+                    <li class="nav__item"><a data-lang-pl="O firmie" data-lang-ru="О компании" href="#"
+                            class="nav__link">О компании</a></li>
+
+
+
+                </ul>
+                <div class="lang">
+
+                    <li class="nav__item lang-dropdown">
+                        <a href="#" class="nav__link dropdown">
+                            <div class="flag current-flag">
+                                <img src="img/flags/russia.png" alt="Русский">
+                            </div>
+                            <span class="current-lang">Русский</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li data-lang="ru">
+                                <img src="img/flags/russia.png" alt="Русский">
+                                Русский
+                            </li>
+                            <li data-lang="pl">
+                                <img src="img/flags/poland.png" alt="Polski">
+                                Polski
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <!-- <div class="nav__contacts">
+                    <img class="header__mob" src="/img/contacts/phone.png" alt="">
+                    <a href="tel:+48 570 804 478">+48 517 339 103</a>
+                </div> -->
+
+                <a href="#"><img class="menu__btn" src="/img/menu.png" alt=""></a>
+                <div class="social-icons header__icons">
+                    <a target="_blank"
+                        href="https://www.instagram.com/ubezpieczenie24?igsh=MWVic2hiMWY3MGoxdw%3D%3D&utm_source=qr "
+                        class="social-icons__item">
+                        <i class="fab fa-instagram"><img class="social-icon" src="/img/social__icons/instagram.png"
+                                alt=""></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/share/p/1Expskx8Uz/?mibextid=wwXIfr"
+                        class="social-icons__item">
+                        <i class="fab fa-tiktok"><img class="social-icon" src="/img/social__icons/facebook.png"
+                                alt=""></i>
+                    </a>
+                    <a target="_blank" href="#" class="social-icons__item">
+                        <i class="fab fa-telegram-plane"><img class="social-icon" src="/img/social__icons/telegram.png"
+                                alt=""></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="header" id="headerForm">
+        <div class="header__background"></div>
+        <div class="container">
+            <div class="header__top">
+                <div class="header__content">
+                    <h1 data-lang-pl="Ubezpieczenie samochodu w Polsce i UE"
+                        data-lang-ru="Автострахование в Польше и ЕС" class="header__title">Автострахование в Польше и ЕС
+                    </h1>
+                    <p data-lang-pl="Potrzebujesz ubezpieczenia samochodu? Jesteś we właściwym miejscu! Wystawiamy polisę ubezpieczeniową w firmie Uniqa. Rabaty aż do 40%!"
+                        data-lang-ru="Нужно застраховать автомобиль? Вы по адресу! Оформим страховой полис от компании Uniqa. Скидка до 40%!"
+                        class="header__text">Нужно застраховать автомобиль? Вы по адресу! Оформим страховой полис от
+                        компании Uniqa. <b>Скидка до 40% !</b></p>
+                </div>
+
+                <form class="header__form">
+                    <h3 data-lang-pl="Wypełnij formularz i otrzymaj bezpłatną konsultację"
+                        data-lang-ru="Заполните форму и получите бесплатную консультацию" class="form__title">Заполните
+                        форму и получите бесплатную консультацию</h3>
+                    <input data-lang-pl="Twoje imię" data-lang-ru="Ваше имя" class="name__input input" type="text"
+                        placeholder="Ваше имя">
+
+                    <div class="phone-input">
+                        <div class="dropdownForm">
+                            <div class="selected-option">
+                                <img id="selected-flag" src="https://flagcdn.com/w40/pl.png" alt="Flag">
+                                <span id="selected-code">+48</span>
+                                <span class="arrow">&#9662;</span>
+                            </div>
+                            <ul id="country-list" class="country-list">
+                                <li data-flag="https://flagcdn.com/w40/by.png" data-code="+375">
+                                    <img src="https://flagcdn.com/w40/by.png" alt="Belarus"> Belarus (Беларусь) +375
+                                </li>
+                                <li data-flag="https://flagcdn.com/w40/pl.png" data-code="+48">
+                                    <img src="https://flagcdn.com/w40/pl.png" alt="Poland"> Poland (Polska) +48
+                                </li>
+                                <li data-flag="https://flagcdn.com/w40/ru.png" data-code="+7">
+                                    <img src="https://flagcdn.com/w40/ru.png" alt="Russia"> Russia (Россия) +7
+                                </li>
+                                <li data-flag="https://flagcdn.com/w40/ua.png" data-code="+380">
+                                    <img src="https://flagcdn.com/w40/ua.png" alt="Ukraine"> Ukraine (Україна) +380
+                                </li>
+                            </ul>
+                        </div>
+                        <input class="input__number" type="text" id="phone-number" placeholder="+48">
+                    </div>
+
+                    <button data-lang-pl="Zostaw prośbę" data-lang-ru="Оставить заявку" class="headerForm__btn"
+                        type="submit">Оставить
+                        заявку</button>
+                    <div data-lang-pl="✔ Otrzymaliśmy Twoje zgłoszenie. Skontaktujemy się z Tobą wkrótce!"
+                        data-lang-ru="✔ Мы получили Вашу заявку. В ближайшее время свяжемся с Вами!" id="successMessage"
+                        style="display: none; background-color: #6B1F1F; color: white; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                        ✔ Мы получили Вашу заявку. В ближайшее время свяжемся с Вами!
+                    </div>
+
+
+                </form>
+
+
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom--content">
+                    <a data-lang-pl="Dowiedz się więcej" data-lang-ru="Узнать подробнее" href="#meet"
+                        class="header__btn">Узнать подробнее</a>
+                    <div data-lang-pl="Nasza firma jest oficjalnym przedstawicielem firmy ubezpieczeniowej PZU.
+ Ubezpieczamy na terenie całej Polski bez żadnych opłat
+ Twoja obecność!" data-lang-ru="Наша компания является официальным представителем страховой компании PZU.
+                        Оформляем страховые полисы по всей Польше без
+                        вашего присутствия!" class="header__desc">Наша компания является официальным представителем
+                        страховой компании Uniqa.
+                        Оформляем страховые полисы по всей Польше без
+                        вашего присутствия!</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="desc">
+            <div class="container">
+                <h3 data-lang-pl="Potrzebujesz polisy ubezpieczeniowej? Zostaw swoją prośbę poniżej!"
+                    data-lang-ru="Нужен страховой полис? Оставьте заявку ниже!" class="desc__title">Нужен страховой
+                    полис? Оставьте заявку ниже!</h3>
+                <div class="desc__buttons">
+                    <a data-lang-pl="Oblicz koszt" data-lang-ru="Рассчитать стоимость" href="#meet"
+                        class="desc__btn">Рассчитать стоимость</a>
+                    <a data-lang-pl="Zostaw prośbę" data-lang-ru="Оставить заявку" href="#headerForm"
+                        class="desc__btn">Оставить заявку</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="insurance">
+            <div class="container">
+                <div class="insurance__contents">
+                    <div class="insurance__img">
+                        <img src="/img/insurance/01.jpg" alt="">
+                    </div>
+                    <div class="insurance__content">
+                        <h4 data-lang-pl="Obowiązkowe ubezpieczenie OC" data-lang-ru="Обязательное страхование OC"
+                            class="insurance__title">Обязательное страхование
+                            OC</h4>
+                        <strong data-lang-pl="Od 1 czerwca 2023 r. relacja w systemie zostanie przerwana
+ " Dokument emigranta w USA"." data-lang-ru="С 1 июня 2023 года прекращаются взаимоотношения в системе
+                            «Зелёная карта»." class="insurance__desc">С 1 июня 2023 года прекращаются взаимоотношения в
+                            системе
+                            «Зелёная карта».</strong>
+                        <h5 data-lang-pl="Co się zmienia dla obcokrajowców?"
+                            data-lang-ru="Что меняется для иностранцев?" class="insurance__label">Что меняется для
+                            иностранцев?</h5>
+                        <div data-lang-pl="Kierowcy, którzy będą wjeżdżać do krajów UE, np. z
+ Białoruś lub Rosja samochodem z Białorusinem /
+ Rejestracja rosyjska - konieczność wykupienia Europejskiego Ubezpieczenia Granicznego. Nasz
+ firma może wydać
+ ubezpieczenie Twojego samochodu na:" data-lang-ru="Водители, которые будут въезжать в страны Евросоюза, к примеру, из
+                            Беларуси или России на автомобиле с белорусской /
+                            российской регистрацией - должны будут приобрести Европейское пограничное страхование. Наша
+                            фирма может оформить
+                            страховку на Ваш автомобиль на:" class="insurance__text">Водители, которые будут въезжать в
+                            страны Евросоюза, к примеру, из
+                            Беларуси или России на автомобиле с белорусской /
+                            российской регистрацией - должны будут приобрести Европейское пограничное страхование. Наша
+                            фирма может оформить
+                            страховку на Ваш автомобиль на:</div>
+                        <div class="insurance__list">
+                            <p data-lang-pl="1. Język polski (przez rok);" data-lang-ru="1. польской (на год);">1.
+                                польской (на год);</p> <br />
+                            <p data-lang-pl="2. białoruski (od jednego miesiąca do jednego roku);"
+                                data-lang-ru="2. белорусской (от месяца до года);">2. белорусской (от месяца до года);
+                            </p> <br />
+                            <p data-lang-pl="3. ukraiński (od jednego miesiąca do jednego roku);"
+                                data-lang-ru="3. украинской (от месяца до года);">3. украинской (от месяца до года);</p>
+                            <br />
+                            <p data-lang-pl="4. rosyjski (od jednego miesiąca do jednego roku);"
+                                data-lang-ru="4. российской (от месяца до года);">4. российской (от месяца до года);</p>
+                            <br />
+                            <p data-lang-pl="i inne rejestracje." data-lang-ru="и иных регистрациях.">и иных
+                                регистрациях.</p>
+                        </div>
+                        <h5 data-lang-pl="Ubezpieczenie OC jest w Polsce obowiązkowe."
+                            data-lang-ru="Ubezpieczenie OC в Польше является обязательным." class="insurance__label">
+                            Ubezpieczenie OC в Польше является обязательным.
+                        </h5>
+                        <div data-lang-pl="W kraju działa ogromna liczba firm ubezpieczeniowych, szczególnie w dużych miastach. Ale lepiej
+ po prostu skorzystaj z usług
+ agenci ubezpieczeniowi. Agenci szybko nawiązują kontakt z firmami ubezpieczeniowymi, aby pomagać swoim klientom
+ klienci mogą szybko złożyć wniosek
+ ubezpieczenie. Najważniejsze jest, aby wybrać odpowiednich agentów." data-lang-ru="Страховых компаний в стране огромное количество — особенно, в крупных городах. Но лучше
+                            всего воспользоваться услугами
+                            страховых агентов. Агенты быстро взаимодействуют со страховыми компаниями, помогая своим
+                            клиентам быстро оформить
+                            страховку. Главное – правильно выбрать таких агентов." class="insurance__text">
+                            Страховых компаний в стране огромное количество — особенно, в крупных городах. Но лучше
+                            всего воспользоваться услугами
+                            страховых агентов. Агенты быстро взаимодействуют со страховыми компаниями, помогая своим
+                            клиентам быстро оформить
+                            страховку. Главное – правильно выбрать таких агентов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fine">
+            <div class="container">
+                <h3 data-lang-pl="Kara za brak OS i jego opóźnienie w 2025 r."
+                    data-lang-ru="Штраф за отсутствие ОС и за ее просрочку в 2025 году" class="fine__title">
+                    Штраф за отсутствие ОС и за ее просрочку в 2025 году
+                </h3>
+
+                <div class="fine__items">
+                    <div class="fine__item">
+                        <div class="fine__lists">
+                            <ul class="fine__list">
+                                <h5 data-lang-pl="Dla pojazdów osobowych" data-lang-ru="Для легкового транспорта"
+                                    class="fine__label">Для легкового транспорта
+                                </h5>
+                                <li class="fine__li">
+                                    <img class="check" src="/img/fine/check.png" alt="">
+                                    <p data-lang-pl="1 – 3 dni – 1870 zł" data-lang-ru=" 1 – 3 дня — 1870 злотых">1 – 3
+                                        дня — 1870 злотых</p>
+                                </li>
+                                <li class="fine__li">
+                                    <img class="check" src="/img/fine/check.png" alt="">
+                                    <p data-lang-pl="4 – 14 dni – 4670 zł" data-lang-ru="4 – 14 дней — 4670 злотых">4 –
+                                        14 дней — 4670 злотых</p>
+                                </li>
+                                <li class="fine__li">
+                                    <img class="check" src="/img/fine/check.png" alt="">
+                                    <p data-lang-pl="Powyżej 14 dni - 9330 zł"
+                                        data-lang-ru="Более 14 дней — 9330 злотых">Более 14 дней — 9330 злотых</p>
+                                </li>
+                            </ul>
+                            <ul class="fine__list">
+                                <h5 data-lang-pl="Dla ciężarówek" data-lang-ru="Для грузовиков" class="fine__label">Для
+                                    грузовиков</h5>
+
+                                <li class="fine__li">
+                                    <img class="check" src="/img/fine/check.png" alt="">
+                                    <p data-lang-pl="1 – 3 dni – 2800 zł" data-lang-ru="1 – 3 дня — 2800 злотых">1 – 3
+                                        дня — 2800 злотых</p>
+                                </li>
+                                <li class="fine__li">
+                                    <img class="check" src="/img/fine/check.png" alt="">
+                                    <p data-lang-pl="4 – 14 dni – 7000 zł" data-lang-ru="4 – 14 дней — 7000 злотых">4 –
+                                        14 дней — 7000 злотых</p>
+                                </li>
+                                <li class="fine__li">
+                                    <img class="check" src="/img/fine/check.png" alt="">
+                                    <p data-lang-pl="Powyżej 14 dni - 14 000 zł"
+                                        data-lang-ru="Более 14 дней — 14000 злотых">Более 14 дней — 14000 злотых</p>
+                                </li>
+                            </ul>
+                            <ul class="fine__list">
+                                <h5 data-lang-pl="Inne pojazdy" data-lang-ru="Прочие ТС" class="fine__label">Прочие ТС
+                                </h5>
+
+                                <li class="fine__li">
+                                    <img class="check" src="/img/fine/check.png" alt="">
+                                    <p data-lang-pl="1 – 3 dni – 310 zł" data-lang-ru="1 – 3 дня — 310 злотых">1 – 3 дня
+                                        — 310 злотых</p>
+                                </li>
+                                <li class="fine__li">
+                                    <img class="check" src="/img/fine/check.png" alt="">
+                                    <p data-lang-pl="4 – 14 dni – 780 zł" data-lang-ru="4 – 14 дней — 780 злотых">4 – 14
+                                        дней — 780 злотых</p>
+                                </li>
+                                <li class="fine__li">
+                                    <img class="check" src="/img/fine/check.png" alt="">
+                                    <p data-lang-pl="Powyżej 14 dni - 1560 zł"
+                                        data-lang-ru="Более 14 дней — 1560 злотых">Более 14 дней — 1560 злотых</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="price">
+            <div class="container">
+                <div class="price__content">
+                    <h3 data-lang-pl="Jaki jest koszt ubezpieczenia?" data-lang-ru="Какая стоимость страховки?"
+                        class="price__title">Какая стоимость страховки?</h3>
+                    <div data-lang-pl="Koszt polisy ubezpieczeniowej zależy od wielu czynników, takich jak: długość stażu pracy
+ właściciel samochodu, rok produkcji samochodu, przebieg,
+ obecność/brak wypadków drogowych, itp. Po podaniu takich informacji agent ubezpieczeniowy będzie mógł:
+ Oblicz koszt
+ polisę ubezpieczeniową i w razie potrzeby rozłożyć kwotę na kilka rat (raty)." data-lang-ru="Стоимость страхового полиса зависит от множества факторов, таких как: стаж
+                        владельца авто, год выпуска авто, пробег,
+                        наличие/отсутствие случаев ДТП и т.д. После предоставления таких сведений страховой агент сможет
+                        подсчитать стоимость
+                        страхового полиса и в случае необходимости разделить сумму на несколько платежей (рат)."
+                        class="price__text">Стоимость страхового полиса зависит от множества факторов, таких как: стаж
+                        владельца авто, год выпуска авто, пробег,
+                        наличие/отсутствие случаев ДТП и т.д. После предоставления таких сведений страховой агент сможет
+                        подсчитать стоимость
+                        страхового полиса и в случае необходимости разделить сумму на несколько платежей (рат).</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="what">
+            <div class="container">
+                <div class="what__content">
+                    <h3 data-lang-pl="Co zrobić, jeśli kupiłeś samochód, mając już ważne ubezpieczenie?"
+                        data-lang-ru="Что делать, если купили автомобиль с уже имеющейся страховкой?"
+                        class="what__title">
+                        Что делать, если купили автомобиль с уже имеющейся страховкой?
+                    </h3>
+                    <div class="what__text">
+                        <p data-lang-pl="Najpierw musisz porozumieć się z poprzednim właścicielem samochodu w sprawie przeniesienia tej polisy na Ciebie. W tym
+ W tym przypadku wszystko jest proste:
+ Musisz powiadomić firmę ubezpieczeniową o zmianie właściciela samochodu. Zwykle agencje ubezpieczeniowe
+ żądanie zgłoszenia
+ w ciągu 30 dni od daty zakupu samochodu. Następnie kwota zostanie przeliczona.
+ ubezpieczenie biorąc pod uwagę
+ pozostałe dni ubezpieczenia. Następnie na Twój adres e-mail zostanie wysłany list od firmy ubezpieczeniowej.
+ kwota potrzebna
+ zapłać ekstra. Ostatecznie polisa ubezpieczeniowa zostanie przeniesiona na Twoje nazwisko." data-lang-ru="Для начала нужно договориться с предыдущим хозяином авто о передаче этого полиса Вам. В этом
+                        случае всё просто:
+                        необходимо сообщить в страховую, что у автомобиля поменялся владелец. Обычно страховые агентства
+                        требуют сообщить об
+                        этом в течение 30 дней со дня покупки автомобиля. Далее будет произведен перерасчёт суммы
+                        страхования с учётом
+                        оставшихся дней по страховке. После этого на вашу почту будет отправлено письмо из страховой с
+                        суммой, которую нужно
+                        доплатить. В конце концов страховой полис будет переоформлен на Вас.">Для начала нужно
+                            договориться с предыдущим хозяином авто о передаче этого полиса Вам. В этом
+                            случае всё просто:
+                            необходимо сообщить в страховую, что у автомобиля поменялся владелец. Обычно страховые
+                            агентства
+                            требуют сообщить об
+                            этом в течение 30 дней со дня покупки автомобиля. Далее будет произведен перерасчёт суммы
+                            страхования с учётом
+                            оставшихся дней по страховке. После этого на вашу почту будет отправлено письмо из страховой
+                            с
+                            суммой, которую нужно
+                            доплатить. В конце концов страховой полис будет переоформлен на Вас.</p>
+                        <br /><br />
+                        <p data-lang-pl="Jeżeli poprzedni właściciel odmówi, będziesz musiał od razu wykupić nowe ubezpieczenie."
+                            data-lang-ru="Если же предыдущий владелец откажется – Вам придется получать новую страховку с самого начала.">
+                            Если же предыдущий владелец откажется – Вам придется получать новую страховку с самого
+                            начала.</p>
+                        <br />
+                        <p data-lang-pl="W takim przypadku radzimy skontaktować się z agentem ubezpieczeniowym: zazwyczaj współpracują z nim takie osoby.
+ kilka firm i będzie w stanie
+ wybierz najkorzystniejsze dla Ciebie warunki. Jednym z takich agentów jest nasza firma Ubezpieczenie 24.
+ Sprawdź, czy dana osoba jest
+ Możesz zostać agentem ubezpieczeniowym w" data-lang-ru="В таком случае советуем обратиться к страховому агенту: обычно эти люди сотрудничают с
+                        несколькими компаниями и смогут
+                        выбрать для Вас самые выгодные условия. Одним из таких агентов является наша фирма Ubezpieczenie 24.
+                        Проверить является ли лицо
+                        страховым агентом можно на ">В таком случае советуем обратиться к страховому агенту: обычно эти
+                            люди сотрудничают с
+                            несколькими компаниями и смогут
+                            выбрать для Вас самые выгодные условия. Одним из таких агентов является наша фирма
+                            Ubezpieczenie 24.
+                            Проверить является ли лицо
+                            страховым агентом можно на</p><a href="https://rpu.knf.gov.pl/" target="_blank"
+                            rel="noopener"><b>
+                                <p data-lang-pl="ta strona" data-lang-ru="данном сайте">данном сайте</p>
+                            </b></a>
+                        <p data-lang-pl=". Aby sprawdzić naszą firmę, prosimy o podanie naszego unikalnego numeru (11255231/A) w odpowiednim
+ pole." data-lang-ru=". Для проверки нашей фирмы укажите наш уникальный номер (11255231/A) в соответствующем
+                            поле.">Для проверки нашей
+                            фирмы укажите наш уникальный номер (11255231/A) в соответствующем
+                            поле.</p>
+
+                        <p data-lang-pl="Na naszej stronie możesz złożyć wniosek o wycenę kosztów polisy ubezpieczeniowej
+ strona internetowa.
+ Skontaktujemy się z Tobą w ciągu godziny i
+ Zaoferujemy najkorzystniejsze warunki." data-lang-ru="Оставить заявку на расчёт стоимости страхового полиса можно на нашем
+                        сайте.
+                        В течение часа мы свяжемся с Вами и
+                        предложим самые выгодные условия.">Оставить заявку на расчёт стоимости страхового полиса можно
+                            на нашем
+                            сайте.
+                            В течение часа мы свяжемся с Вами и
+                            предложим самые выгодные условия.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="question">
+            <div class="container">
+                <div class="question__content">
+                    <h3 data-lang-pl="Często zadawane pytania" data-lang-ru="Часто задаваемые вопросы"
+                        class="question__title">Часто задаваемые вопросы</h3>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div data-lang-pl="Kupiłem samochód bez ubezpieczenia, co powinienem zrobić?"
+                            data-lang-ru="Я купил машину без страховки, что мне делать?" class="accordion-header">Я
+                            купил машину без страховки, что мне делать?
+                        </div>
+                        <div data-lang-pl="Musisz wykupić polisę ubezpieczeniową w dniu zakupu pojazdu. W takim razie ty
+ będzie w stanie uniknąć
+ grzywna za wygasłą polisę ubezpieczeniową." data-lang-ru="Вам необходимо приобрести страховой полис в день покупки автомобиля. В таком случае вам
+                            удастся избежать
+                            штрафа за просроченный страховой полис." class="accordion-content">
+                            Вам необходимо приобрести страховой полис в день покупки автомобиля. В таком случае вам
+                            удастся избежать
+                            штрафа за просроченный страховой полис.
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div data-lang-pl="Czy polisa ubezpieczeniowa odnawia się automatycznie?"
+                            data-lang-ru="Продлевается ли страховой полис автоматически?" class="accordion-header">
+                            Продлевается ли страховой полис автоматически?
+                        </div>
+                        <div data-lang-pl="Jeśli wykupiłeś ubezpieczenie roczne, tak, Twoja polisa ubezpieczeniowa zostanie odnowiona automatycznie i
+ Będziesz musiał
+ zapłać ją (lub jej pierwszą część) w ciągu 7–14 dni. Polisa ubezpieczeniowa nie jest
+ jest odnawiany automatycznie w
+ sprawy:" data-lang-ru="Если вы приобрели годовую страховку – да, ваш страховой полис будет продлён автоматически и
+                            Вам необходимо будет
+                            оплатить его (либо первую его часть) в течение следующих 7-14 дней. Страховой полис не
+                            продлевается автоматически в
+                            случаях:" class="accordion-content">
+                            Если вы приобрели годовую страховку – да, ваш страховой полис будет продлён автоматически и
+                            Вам необходимо будет
+                            оплатить его (либо первую его часть) в течение следующих 7-14 дней. Страховой полис не
+                            продлевается автоматически в
+                            случаях:
+                            <ul>
+                                <li data-lang-pl="● Zmiana właściciela pojazdu"
+                                    data-lang-ru="● Смены владельца транспортного средства"> ● Смены владельца
+                                    транспортного средства</li>
+                                <li data-lang-pl="● Jeśli jest to miesięczna polisa ubezpieczeniowa (prowizja)"
+                                    data-lang-ru="● Если это месячный страховой полис (комисувка)"> ● Если это месячный
+                                    страховой полис (комисувка)</li>
+                                <li data-lang-pl="● Jeżeli zgłoszono wyrejestrowanie pojazdu"
+                                    data-lang-ru="● Если было сообщено о снятии автомобиля с учёта"> ● Если было
+                                    сообщено о снятии автомобиля с учёта</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div data-lang-pl="Gdzie kupić ubezpieczenie samochodowe w Polsce?"
+                            data-lang-ru="Где купить автостраховку в Польше?" class="accordion-header">
+                            Где купить автостраховку в Польше?
+                        </div>
+                        <div data-lang-pl="Polisę ubezpieczeniową możesz wykupić w naszym biurze po wcześniejszym umówieniu się lub osobiście.
+ online, zostawiając prośbę na naszej stronie
+ strona internetowa." data-lang-ru="Приобрести страховой полис можно у нас в офисе по предварительной записи, либо в режиме
+                            онлайн, оставив заявку на нашем
+                            сайте." class="accordion-content">
+                            Приобрести страховой полис можно у нас в офисе по предварительной записи, либо в режиме
+                            онлайн, оставив заявку на нашем
+                            сайте.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="meet" id="meet">
+            <div class="container">
+                <div class="meet__content">
+                    <h3 data-lang-pl="Darmowa konsultacja" data-lang-ru="Бесплатная консультация" class="meet__title">
+                        Бесплатная консультация</h3>
+                    <p class="meet__desc">
+                    <p data-lang-pl="Zostaw swoje dane i otrzymuj aktualne informacje w ciągu 30 minut"
+                        data-lang-ru="Оставьте свои данные и получите актуальную информацию в течении 30 минут">Оставьте
+                        свои данные и
+                        получите актуальную информацию в <strong>течении 30 минут</strong></p><br>
+                    </p>
+                    <form action="#" class="meet__form">
+                        <input class="name__input input meet__input" type="text" placeholder="Ваше имя">
+                        <input class="number__input input meet__input" type="number" placeholder="Номер телефона">
+                        <button data-lang-pl="Poproś o połączenie" data-lang-ru="Заказать звонок"
+                            class="meetForm__btn meet__btn" type="submit">Заказать
+                            звонок</button>
+                        <div data-lang-pl="✔ Otrzymaliśmy Twoje zgłoszenie. Skontaktujemy się z Tobą wkrótce!"
+                            data-lang-ru="✔ Мы получили Вашу заявку. В ближайшее время свяжемся с Вами!"
+                            id="successMessage2"
+                            style="display: none; background-color: #6B1F1F; color: white; padding: 10px; margin-top: 10px; border-radius: 5px;">
+                            ✔ Мы получили Вашу заявку. В ближайшее время свяжемся с Вами!
+                        </div>
+                    </form>
+                    <div class="meet__info">
+                        <p data-lang-pl="Wysyłając ten formularz wyrażasz zgodę na przetwarzanie"
+                            data-lang-ru="Отправляя данную форму, Вы соглашаетесь на обработку">Отправляя данную форму,
+                            Вы соглашаетесь на обработку</p> <a href="https://skilldocs.pl/privacy-policy/"
+                            data-lang-pl="osobisty
+ dane" data-lang-ru="персональных
+                            данных">персональных
+                            данных</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__content">
+                    <div class="contacts__info">
+                        <h4 data-lang-pl="Łączność" data-lang-ru="Контакты" class="contacts__title">Контакты</h4>
+                        <a href="#" class="contacts__adress">
+                            <img class="contacts__icon" src="/img/contacts/location.png" alt="">
+                            Wincentego Rzymowskiego 30/323, 02-697, Warszawa</a>
+                        <a href="mailto:contact@Ubezpieczenie24.pl" class="contacts__email">
+                            <img class="contacts__icon" src="/img/contacts/email.png" alt="">
+                            contact@Ubezpieczenie24.pl</a>
+                        <div class="contacts__desc">
+                            <a href="tel:+48 517 339 103" class="contacts__number">
+                                <img class="contacts__icon" src="/img/contacts/phone.png" alt="">
+                                +48 517 339 103</a>
+                            <div class="social-icons contacts__icons">
+                                <a target="_blank"
+                                    href="https://www.instagram.com/ubezpieczenie24?igsh=MWVic2hiMWY3MGoxdw%3D%3D&utm_source=qr "
+                                    class="social-icons__item">
+                                    <i class="fab fa-instagram"><img class="social-icon"
+                                            src="/img/social__icons/instagram.png" alt=""></i>
+                                </a>
+                                <a target="_blank" href="https://www.facebook.com/share/p/1Expskx8Uz/?mibextid=wwXIfr"
+                                    class="social-icons__item">
+                                    <i class="fab fa-tiktok"><img class="social-icon"
+                                            src="/img/social__icons/facebook.png" alt=""></i>
+                                </a>
+                                <a target="_blank" href="#" class="social-icons__item">
+                                    <i class="fab fa-telegram-plane"><img class="social-icon"
+                                            src="/img/social__icons/telegram.png" alt=""></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="contacts__text">Ubezpieczenie 24 SP. z O.O.</p>
+                        <p class="contacts__text">KRS: 0000966749</p>
+                        <p class="contacts__text">NIP: 5252904413</p>
+
+                    </div>
+
+                    <div class="contacts__map">
+                        <iframe width="100%" height="480" frameborder="0" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.2990253749524!2d20.991488676631586!3d52.1796239719039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719337cc5a2d8d7%3A0xf1a0d54f7b1ea93c!2sWincentego%20Rzymowskiego%2030%2F323%2C%2002-697%20Warszawa%2C%20Poland!5e0!3m2!1sen!2sua!4v1706985600000"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__content">
+                    <div class="feedback__desc">
+                        <h5 class="feedback__title">Ubezpieczenie 24</h5>
+                        <div class="feedback__star">
+                            <div><span class="wp-google-rating">4.8</span><span class="wp-google-stars"><span
+                                        class="wp-stars"><span class="wp-star"><svg width="17" height="17"
+                                                viewBox="0 0 1792 1792">
+                                                <path
+                                                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                    fill="#fb8e28"></path>
+                                            </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                viewBox="0 0 1792 1792">
+                                                <path
+                                                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                    fill="#fb8e28"></path>
+                                            </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                viewBox="0 0 1792 1792">
+                                                <path
+                                                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                    fill="#fb8e28"></path>
+                                            </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                viewBox="0 0 1792 1792">
+                                                <path
+                                                    d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                    fill="#fb8e28"></path>
+                                            </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                viewBox="0 0 1792 1792">
+                                                <path
+                                                    d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500-364-354q-32-32-23-59.5t54-34.5l502-73 225-455q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z"
+                                                    fill="#fb8e28"></path>
+                                            </svg></span></span></span></div>
+                        </div>
+                        <p data-lang-pl="Na podstawie 308 opinii" data-lang-ru="Основываясь на 308 отзывах"
+                            class="feedback__info">Основываясь на 308 отзывах
+                        </p>
+                        <p class="feedback__info">
+                        <div class="wp-google-powered"><img loading="lazy" decoding="async"
+                                src="https://skilldocs.pl/wp-content/plugins/widget-google-reviews/assets/img/powered_by_google_on_white.png"
+                                alt="powered by Google" width="144" height="18" title="powered by Google"></div>
+                        </p>
+
+                    </div>
+                    <div class="feedback__slider swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Відгук 1 -->
+                            <div class="swiper-slide feedback__card">
+                                <div class="feedback__top">
+                                    <h3 data-lang-pl="Doskonała obsługa!" data-lang-ru="Отличный сервис!"
+                                        class="feedback__name">Отличный сервис!
+                                    </h3>
+
+                                </div>
+                                <p>
+                                <div class="feedback__stars">
+                                    <div><span class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                                        width="17" height="17" viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-stars"><span class="wp-star"><svg
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#fb8e28"></path>
+                                                        </svg></span></span></span></div>
+                                </div>
+                                </p>
+                                <p data-lang-pl="Niedawno ubezpieczyłem swój samochód i byłem mile zaskoczony.
+ profesjonalizm personelu. Wyjaśnili wszystko szczegółowo i znaleźli.
+ świetna oferta, cały proces zajął tylko pół godziny. Co kocham najbardziej
+ co mnie uszczęśliwiło to to, że w tym przypadku
+ kolizje naprawdę pomagają szybko rozwiązać kwestię odszkodowania. I
+ Polecam!" data-lang-ru="Недавно застраховал свой автомобиль и был приятно удивлен
+                                    профессионализмом сотрудников. Все подробно объяснили, нашли
+                                    выгодное предложение, весь процесс занял всего полчаса. Что меня больше всего
+                                    порадовало, так это то, что в случае
+                                    столкновения действительно помогают быстро решить вопрос о компенсации. Я
+                                    рекомендую!" class="feedback__review">Недавно застраховал свой автомобиль и был
+                                    приятно удивлен
+                                    профессионализмом сотрудников. Все подробно объяснили, нашли
+                                    выгодное предложение, весь процесс занял всего полчаса. Что меня больше всего
+                                    порадовало, так это то, что в случае
+                                    столкновения действительно помогают быстро решить вопрос о компенсации. Я
+                                    рекомендую!
+                                </p>
+                            </div>
+
+                            <!-- ....... -->
+                            <div class="swiper-slide feedback__card">
+                                <div class="feedback__top">
+                                    <h3 data-lang-pl="Najlepsza firma ubezpieczeniowa!"
+                                        data-lang-ru="Лучшая страховая компания!" class="feedback__name">Лучшая
+                                        страховая компания!
+                                    </h3>
+
+                                </div>
+                                <p>
+                                <div class="feedback__stars">
+                                    <div><span class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                                        width="17" height="17" viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-stars"><span class="wp-star"><svg
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#fb8e28"></path>
+                                                        </svg></span></span></span></div>
+                                </div>
+                                </p>
+                                <p data-lang-pl="Korzystam z usług tej firmy już trzeci rok z rzędu. Bardzo
+ komfortowe warunki, jasne umowy i uprzejma obsługa.
+ Niedawno potrzebowałem pomocy w sprawie roszczenia ubezpieczeniowego – wszystko zostało rozwiązane
+ szybko i bez zbędnych formalności.
+ Dziękujemy za profesjonalizm!" data-lang-ru="Пользуюсь услугами этой компании третий год подряд. Очень
+                                    комфортные условия, четкие договоры и вежливое обслуживание.
+                                    Недавно мне понадобилась помощь при наступлении страхового случая – все было решено
+                                    быстро и без лишних формальностей.
+                                    Спасибо за ваш профессионализм!" class="feedback__review">Пользуюсь услугами этой
+                                    компании третий год подряд. Очень
+                                    комфортные условия, четкие договоры и вежливое обслуживание.
+                                    Недавно мне понадобилась помощь при наступлении страхового случая – все было решено
+                                    быстро и без лишних формальностей.
+                                    Спасибо за ваш профессионализм!
+                                </p>
+                            </div>
+
+                            <!-- ........ -->
+
+                            <div class="swiper-slide feedback__card">
+                                <div class="feedback__top">
+                                    <h3 data-lang-pl="Dobry wybór ubezpieczenia samochodu"
+                                        data-lang-ru="Хороший выбор для автострахования" class="feedback__name">Хороший
+                                        выбор для автострахования
+                                    </h3>
+
+                                </div>
+                                <p>
+                                <div class="feedback__stars">
+                                    <div><span class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                                        width="17" height="17" viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span></span></span></div>
+                                </div>
+                                </p>
+                                <p data-lang-pl="Firma oferuje szeroki wachlarz programów ubezpieczeniowych. Ceny
+ całkiem rozsądne ceny, a obsługa jest szybka i nienaganna.
+ Jedynym minusem jest to, że w weekendy trudno dotrzeć do biura, ale ogólnie jestem zadowolony." data-lang-ru="Компания предлагает широкий выбор программ страхования. Цены
+                                    вполне разумные, а обслуживание быстрое и безупречное.
+                                    Единственный минус - в выходные сложно доехать до офиса, но в целом я доволен."
+                                    class="feedback__review">Компания предлагает широкий выбор программ страхования.
+                                    Цены
+                                    вполне разумные, а обслуживание быстрое и безупречное.
+                                    Единственный минус - в выходные сложно доехать до офиса, но в целом я доволен.
+                                </p>
+                            </div>
+
+                            <!-- ...... -->
+                            <div class="swiper-slide feedback__card">
+                                <div class="feedback__top">
+                                    <h3 data-lang-pl="Wygodny, dochodowy, niezawodny"
+                                        data-lang-ru="Комфортно, выгодно, надежно" class="feedback__name">Комфортно,
+                                        выгодно, надежно
+                                    </h3>
+
+                                </div>
+                                <p>
+                                <div class="feedback__stars">
+                                    <div><span class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                                        width="17" height="17" viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-stars"><span class="wp-star"><svg
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#fb8e28"></path>
+                                                        </svg></span></span></span></div>
+                                </div>
+                                </p>
+                                <p data-lang-pl="Ubezpieczam tutaj swój samochód już od kilku lat. Wszystko jest uczciwe
+ i transparentnie, bez ukrytych opłat. Miło, że w tym przypadku
+ specjaliści od kolizji załatwiają wszystkie formalności - minimum stresu dla
+ klient. Dziękuję bardzo!" data-lang-ru="Страхую здесь свой автомобиль уже несколько лет. Все честно
+                                    и прозрачно, без скрытых комиссий. Приятно, что в случае
+                                    столкновения специалисты берут на себя все формальности – минимум стресса для
+                                    клиента. Большое спасибо!" class="feedback__review">Страхую здесь свой автомобиль
+                                    уже несколько лет. Все честно
+                                    и прозрачно, без скрытых комиссий. Приятно, что в случае
+                                    столкновения специалисты берут на себя все формальности – минимум стресса для
+                                    клиента. Большое спасибо!
+                                </p>
+                            </div>
+
+                            <!-- ...... -->
+                            <div class="swiper-slide feedback__card">
+                                <div class="feedback__top">
+                                    <h3 data-lang-pl="Brak wsparcia w języku hindi"
+                                        data-lang-ru="Отсутствие поддержки на хинди" class="feedback__name">Отсутствие
+                                        поддержки на хинди
+                                    </h3>
+
+                                </div>
+                                <p>
+                                <div class="feedback__stars">
+                                    <div><span class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                                        width="17" height="17" viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span></span></span></div>
+                                </div>
+                                </p>
+                                <p data-lang-pl="Bardzo rozczarowany! Nie ma konsultanta mówiącego po hindi,
+ co spowodowało duże trudności - usługa nie jest przeznaczona do
+ wszyscy klienci." data data-lang-ru="Очень разочарован! Нет консультанта, говорящего на хинди,
+                                
+                                    из-за чего возникли большие сложности — сервис не рассчитан на
+                                    всех клиентов." class="feedback__review">Очень разочарован! Нет консультанта,
+                                    говорящего на хинди,
+                                    из-за чего возникли большие сложности — сервис не рассчитан на
+                                    всех клиентов.
+                                </p>
+                            </div>
+
+                            <!-- ...... -->
+                            <div class="swiper-slide feedback__card">
+                                <div class="feedback__top">
+                                    <h3 data-lang-pl="Dobra obsługa" data-lang-ru="Хороший сервис"
+                                        class="feedback__name">Хороший сервис
+                                    </h3>
+
+                                </div>
+                                <p>
+                                <div class="feedback__stars">
+                                    <div><span class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                                        width="17" height="17" viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span></span></span></div>
+                                </div>
+                                </p>
+                                <p data-lang-pl="Proces ubezpieczenia trwał zaledwie 20 minut, co naprawdę mi się podobało.
+ zaskoczony. Pracownik wszystko mi dokładnie wyjaśnił i pomógł wybrać.
+ odpowiedni plan. Jedynym minusem jest to, że strona nie posiada kalkulatora online, który pozwala na
+ Oblicz koszty z góry." data-lang-ru="Процесс страхования занял всего 20 минут, что меня очень
+                                    удивило. Сотрудник все подробно объяснил и помог выбрать
+                                    подходящий план. Единственный минус – на сайте нет онлайн-калькулятора, позволяющего
+                                    заранее подсчитать стоимость." class="feedback__review">Процесс страхования занял
+                                    всего 20 минут, что меня очень
+                                    удивило. Сотрудник все подробно объяснил и помог выбрать
+                                    подходящий план. Единственный минус – на сайте нет онлайн-калькулятора, позволяющего
+                                    заранее подсчитать стоимость.
+                                </p>
+                            </div>
+
+                            <!-- ........ -->
+
+                            <div class="swiper-slide feedback__card">
+                                <div class="feedback__top">
+                                    <h3 data-lang-pl="Polecam każdemu!" data-lang-ru="Я рекомендую это всем!"
+                                        class="feedback__name">Я рекомендую это
+                                        всем!
+                                    </h3>
+
+                                </div>
+                                <p>
+                                <div class="feedback__stars">
+                                    <div><span class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                                        width="17" height="17" viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-stars"><span class="wp-star"><svg
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#fb8e28"></path>
+                                                        </svg></span></span></span></div>
+                                </div>
+                                </p>
+                                <p data-lang-pl="Przyszedłem tutaj z polecenia znajomego i teraz polecam to miejsce każdemu
+ ten
+ firma. Bardzo uprzejma obsługa, przystępne ceny i najwspanialsze
+ Najważniejsze jest to, że nie ma żadnych problemów z wypłacaniem środków. Postępują uczciwie, co mamy dzisiaj.
+ rzadkość." data-lang-ru="Пришёл сюда по рекомендации друга и теперь всем рекомендую
+                                    эту
+                                    компанию. Очень вежливый персонал, доступные цены и самое
+                                    главное никаких проблем с выводом средств. Они действуют честно, что в наши дни
+                                    редкость." class="feedback__review">Пришёл сюда по рекомендации друга и теперь всем
+                                    рекомендую
+                                    эту
+                                    компанию. Очень вежливый персонал, доступные цены и самое
+                                    главное никаких проблем с выводом средств. Они действуют честно, что в наши дни
+                                    редкость.
+                                </p>
+                            </div>
+
+                            <!-- ......... -->
+                            <div class="swiper-slide feedback__card">
+                                <div class="feedback__top">
+                                    <h3 data-lang-pl="Przyzwoita obsługa" data-lang-ru="Достойный сервис"
+                                        class="feedback__name">Достойный сервис
+                                    </h3>
+
+                                </div>
+                                <p>
+                                <div class="feedback__stars">
+                                    <div><span class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                                        width="17" height="17" viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span></span></span></div>
+                                </div>
+                                </p>
+                                <p data-lang-pl="Podobało mi się podejście firmy do klientów. Zakończyłem projekt
+ ubezpieczenie
+ odpowiedzialność cywilna i proponowane dodatkowe
+ usług, ale ich nie narzucał. Warunki ubezpieczenia są korzystne, choć dla stałych klientów
+ klienci
+ bardziej elastyczne byłyby przydatne
+ zniżki." data-lang-ru="Мне понравился подход компании к клиентам. Я оформил
+                                    страхование
+                                    гражданской ответственности и предложил дополнительные
+                                    услуги, но не навязывал их. Условия страхования выгодные, хотя для постоянных
+                                    клиентов
+                                    были бы полезны более гибкие
+                                    скидки." class="feedback__review">Мне понравился подход компании к клиентам. Я
+                                    оформил
+                                    страхование
+                                    гражданской ответственности и предложил дополнительные
+                                    услуги, но не навязывал их. Условия страхования выгодные, хотя для постоянных
+                                    клиентов
+                                    были бы полезны более гибкие
+                                    скидки.
+                                </p>
+                            </div>
+
+                            <!-- ....... -->
+                            <div class="swiper-slide feedback__card">
+                                <div class="feedback__top">
+                                    <h3 data-lang-pl="Wspaniałe przeżycie!" data-lang-ru="Отличный опыт!"
+                                        class="feedback__name">Отличный опыт!
+                                    </h3>
+
+                                </div>
+                                <p>
+                                <div class="feedback__stars">
+                                    <div><span class="wp-google-stars"><span class="wp-stars"><span class="wp-star"><svg
+                                                        width="17" height="17" viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-star"><svg width="17" height="17"
+                                                        viewBox="0 0 1792 1792">
+                                                        <path
+                                                            d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                            fill="#fb8e28"></path>
+                                                    </svg></span><span class="wp-stars"><span class="wp-star"><svg
+                                                            width="17" height="17" viewBox="0 0 1792 1792">
+                                                            <path
+                                                                d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"
+                                                                fill="#fb8e28"></path>
+                                                        </svg></span></span></span></div>
+                                </div>
+                                </p>
+                                <p data-lang-pl="Personel naprawdę troszczy się o swoich klientów. Po
+ wypadki i
+ Skontaktowałem się z nimi i przeprowadzili mnie przez to krok po kroku
+ przez cały proces. Czuć wysoki poziom profesjonalizmu. Dziękuję bardzo za
+ twój
+ praca!" data-lang-ru="Сотрудники действительно заботятся о своих клиентах. После
+                                    аварии я
+                                    связался с ними, и они шаг за шагом провели меня
+                                    через весь процесс. Чувствуется высокий уровень профессионализма. Большое спасибо за
+                                    вашу
+                                    работу!" class="feedback__review">Сотрудники действительно заботятся о своих
+                                    клиентах. После
+                                    аварии я
+                                    связался с ними, и они шаг за шагом провели меня
+                                    через весь процесс. Чувствуется высокий уровень профессионализма. Большое спасибо за
+                                    вашу
+                                    работу!
+                                </p>
+                            </div>
+
+                        </div>
+                        <!-- Кнопки навігації -->
+                        <!-- <div class="swiper-button-next "></div>
+                        <div class="swiper-button-prev "></div> -->
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__columns">
+                    <!-- Логотип + Контактна інформація -->
+                    <div class="footer__col">
+                        <h2 class="footer__logo">Ubezpieczenie 24</h2>
+                        <div class="contacts__info">
+                            <a href="#" class="contacts__adress">
+                                <img class="contacts__icon" src="/img/contacts/location.png" alt="">
+                                Wincentego Rzymowskiego 30/323, 02-697, Warszawa</a>
+                            <a href="mailto:contact@Ubezpieczenie24.pl" class="contacts__email">
+                                <img class="contacts__icon" src="/img/contacts/email.png" alt="">
+                                contact@Ubezpieczenie24.pl</a>
+                            <div class="contacts__desc">
+                                <a href="tel:+48 517 339 103" class="contacts__number">
+                                    <img class="contacts__icon" src="/img/contacts/phone.png" alt="">
+                                    +48 517 339 103</a>
+
+                            </div>
+                            <p class="contacts__text">Ubezpieczenie 24 SP. z O.O.</p>
+                            <p class="contacts__text">KRS: 0000966749</p>
+                            <p class="contacts__text">NIP: 5252904413</p>
+
+                        </div>
+                        <div class="social-icons footer__icons">
+                            <a target="_blank"
+                                href="https://www.instagram.com/ubezpieczenie24?igsh=MWVic2hiMWY3MGoxdw%3D%3D&utm_source=qr "
+                                class="social-icons__item">
+                                <i class="fab fa-instagram"><img class="social-icon"
+                                        src="/img/social__icons/instagram.png" alt=""></i>
+                            </a>
+                            <a target="_blank" href="https://www.facebook.com/share/p/1Expskx8Uz/?mibextid=wwXIfr"
+                                class="social-icons__item">
+                                <i class="fab fa-tiktok"><img class="social-icon" src="/img/social__icons/facebook.png"
+                                        alt=""></i>
+                            </a>
+                            <a target="_blank" href="#" class="social-icons__item">
+                                <i class="fab fa-telegram-plane"><img class="social-icon"
+                                        src="/img/social__icons/telegram.png" alt=""></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Послуги -->
+                    <div class="footer__col">
+                        <h3 data-lang-pl="USŁUGI" data-lang-ru="УСЛУГИ">УСЛУГИ</h3>
+                        <ul>
+                            <li class="nav__item"><a data-lang-pl="Karta pobytu" data-lang-ru="Карта побыта" href="#"
+                                    class="nav__link">Карта
+                                    побыта</a>
+                            </li>
+                            <li class="nav__item"><a data-lang-pl="Obywatelstwo" data-lang-ru="Гражданство" href="#"
+                                    class="nav__link">Гражданство</a></li>
+
+                            <li class="nav__item"><a data-lang-pl="Usługi samochodowe" data-lang-ru="Автоуслуги"
+                                    href="#" class="nav__link dropdown">Автоуслуги</a></li>
+                            <li class="nav__item"><a data-lang-pl="Inne usługi" data-lang-ru="Другие услуги" href="#"
+                                    class="nav__link dropdown">Другие
+                                    услуги</a></li>
+                            <li class="nav__item"><a data-lang-pl="Blog" data-lang-ru="Блог" href="#"
+                                    class="nav__link">Блог</a>
+                            </li>
+                            <li class="nav__item"><a data-lang-pl="O firmie" data-lang-ru="О компании" href="#"
+                                    class="nav__link">О компании</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Графік роботи -->
+                    <!-- <div class="footer__col">
+                        <h3 data-lang-pl="GODZINY PRACY" data-lang-ru="ВРЕМЯ РАБОТЫ">ВРЕМЯ РАБОТЫ</h3>
+                        <p data-lang-pl="Możesz się z nami skontaktować w każdy dzień tygodnia w godzinach 09:00-17:30"
+                            data-lang-ru="Вы можете связаться с нами в любой день недели с 09:00 до 17:30">Вы можете
+                            связаться с нами в любой день недели с 09:00 до 17:30</p>
+                    </div> -->
+
+                    <!-- Блог -->
+                    <div class="footer__col">
+                        <h3 data-lang-pl="BLOG" data-lang-ru="БЛОГ">БЛОГ</h3>
+                        <div class="footer__blog">
+                            <div class="blog__item">
+                                <img src="/img/footer/01.jpg" alt="Блог 1">
+                                <div class="blog__info">
+                                    <p class="blog__title"><a
+                                            data-lang-pl="Nowe wymagania dotyczące ubiegania się o pobyt stały"
+                                            data-lang-ru="Новые требования при подаче на ПМЖ" href="#">Новые требования
+                                            при подаче на ПМЖ</a></p>
+                                    <span>26.01.2025</span>
+                                </div>
+                            </div>
+                            <div class="blog__item">
+                                <img src="/img/footer/02.jpg" alt="Блог 2">
+                                <div class="blog__info">
+                                    <p class="blog__title"><a data-lang-pl="Wszystko o ubezpieczeniu samochodu w Polsce"
+                                            data-lang-ru="Всё о страховании авто в Польше" href="#">Всё о страховании
+                                            авто в Польше</a></p>
+                                    <span>24.12.2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p data-lang-pl="© Copyright 2024 Ubezpieczenie 24 - szeroki zakres usług w Warszawie i całej Polsce."
+                    data-lang-ru="© Copyright 2024 Ubezpieczenie 24 - широкий спектр услуг в Варшаве и по всей Польше.">
+                    ©
+                    Copyright 2024 Ubezpieczenie 24 - широкий спектр услуг в Варшаве и по всей Польше.</p>
+                <p data-lang-pl="Polityka prywatności" data-lang-ru="Политика конфиденциальности">Политика
+                    конфиденциальности</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
