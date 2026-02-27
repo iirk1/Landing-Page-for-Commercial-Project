@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
       countryList.style.display === "block" ? "none" : "block";
   });
 
-  // Вибір країни
   countryList.querySelectorAll("li").forEach((item) => {
     item.addEventListener("click", function () {
       let flag = this.getAttribute("data-flag");
