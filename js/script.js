@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const phoneNumberInput = document.querySelector("#phone-number");
 
   dropdown.addEventListener("click", function (event) {
-    event.stopPropagation(); 
+    event.stopPropagation();
     countryList.style.display =
       countryList.style.display === "block" ? "none" : "block";
   });
@@ -164,30 +164,14 @@ document.querySelectorAll(".meetForm__btn, .form__btn").forEach((button) => {
 // ..............
 document.addEventListener("DOMContentLoaded", () => {
   const textElements = document.querySelectorAll("[data-lang-ru]");
-  const placeholderElements = document.querySelectorAll("[data-lang-ru]");
   const languageSelector = document.querySelector(".lang-dropdown");
   const dropdownMenu = document.querySelector(".dropdown-menu");
   const currentLangDisplay = document.querySelector(".current-lang");
-  const currentFlag = document.querySelector(".current-flag img");
   const dropdownItems = document.querySelectorAll(".dropdown-menu li");
 
   function changeLanguage(language) {
     textElements.forEach((el) => {
       el.textContent = el.getAttribute(`data-lang-${language}`);
-    });
-
-    placeholderElements.forEach((el) => {
-      if (el.hasAttribute("placeholder")) {
-        el.setAttribute(
-          "placeholder",
-          el.getAttribute(`data-lang-${language}`)
-        );
-      }
-
-      if (el.tagName === "LABEL") {
-        const text = el.getAttribute(`data-lang-${language}`);
-        el.innerHTML = `${text} <span style="color: rgb(217, 85, 85); padding-top: 5px;">*</span>`;
-      }
     });
 
     localStorage.setItem("selectedLanguage", language);
@@ -196,31 +180,28 @@ document.addEventListener("DOMContentLoaded", () => {
   dropdownItems.forEach((item) => {
     item.addEventListener("click", (event) => {
       event.preventDefault();
+      event.stopPropagation(); // 🔥 ОЦЕ ГОЛОВНЕ
 
-      const selectedLang = item.getAttribute("data-lang");
-      const selectedFlag = item.querySelector("img").src;
-      const selectedText = item.textContent.trim();
+      const lang = item.getAttribute("data-lang");
+      currentLangDisplay.textContent = item.textContent.trim();
 
-      currentFlag.src = selectedFlag;
-      currentLangDisplay.textContent = selectedText;
-
-      changeLanguage(selectedLang);
-
-      setTimeout(() => {
-        dropdownMenu.classList.remove("active");
-      }, 100);
+      changeLanguage(lang);
+      dropdownMenu.classList.remove("active"); // меню закривається
     });
   });
 
-  languageSelector.addEventListener("click", (event) => {
-    event.preventDefault();
-    event.stopPropagation();
+  // відновлення мови
+  const savedLang = localStorage.getItem("selectedLanguage") || "ru";
+  changeLanguage(savedLang);
+  currentLangDisplay.textContent = savedLang === "pl" ? "Polski" : "Русский";
+
+  languageSelector.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation(); // 🔥 щоб document не закрив одразу
     dropdownMenu.classList.toggle("active");
   });
 
-  document.addEventListener("click", (event) => {
-    if (!languageSelector.contains(event.target)) {
-      dropdownMenu.classList.remove("active");
-    }
+  document.addEventListener("click", () => {
+    dropdownMenu.classList.remove("active");
   });
 });
