@@ -180,24 +180,23 @@ document.addEventListener("DOMContentLoaded", () => {
   dropdownItems.forEach((item) => {
     item.addEventListener("click", (event) => {
       event.preventDefault();
-      event.stopPropagation(); // 🔥 ОЦЕ ГОЛОВНЕ
+      event.stopPropagation();
 
       const lang = item.getAttribute("data-lang");
       currentLangDisplay.textContent = item.textContent.trim();
 
       changeLanguage(lang);
-      dropdownMenu.classList.remove("active"); // меню закривається
+      dropdownMenu.classList.remove("active");
     });
   });
 
-  // відновлення мови
   const savedLang = localStorage.getItem("selectedLanguage") || "ru";
   changeLanguage(savedLang);
   currentLangDisplay.textContent = savedLang === "pl" ? "Polski" : "Русский";
 
   languageSelector.addEventListener("click", (e) => {
     e.preventDefault();
-    e.stopPropagation(); // 🔥 щоб document не закрив одразу
+    e.stopPropagation();
     dropdownMenu.classList.toggle("active");
   });
 
